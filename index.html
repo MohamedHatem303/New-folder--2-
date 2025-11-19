@@ -3,38 +3,68 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Linear — Solve System (Gaussian steps)</title>
+    <title>Solve linear Systems </title>
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container border border-2 border-black rounded-2 px-3 my-4">
+    <div class="container border border-2 border-black rounded-2 px-3 my-2">
       <nav class="my-2 py-3 px-2 border border-2 border-black rounded-2">
         <div class="d-flex justify-content-center">
           <div>
-            <h3>Solve the linear system using the Gaussian Elimination method</h3>
+            <h3>
+              Solve the linear system using the Gaussian Elimination method
+            </h3>
           </div>
         </div>
       </nav>
-      <div id="model" class="container-mini border border-2 border-black rounded-2 d-block">
+      <div
+        id="model"
+        class="container-mini border border-2 border-black rounded-2 d-block"
+      >
         <section class="container">
           <div class="d-flex justify-content-center my-4">
-            <h3 class="text-center border border-2 border-black rounded-2 my-2 p-2">Size of Augmented Matrix</h3>
+            <h3
+              class="text-center border border-2 border-black rounded-2 my-2 p-2"
+            >
+              Size of Augmented Matrix
+            </h3>
           </div>
           <div class="ms-5 my-4">
             <table>
               <tr>
-                <td><label for="Equations"><h3>Numper Of Equations</h3></label></td>
-                <td><input type="number" id="Equations" class="border border-2 border-black rounded-2"></td>
+                <td>
+                  <label for="Equations"><h3>Numper Of Equations</h3></label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="Equations"
+                    class="border border-2 border-black rounded-2"
+                  />
+                </td>
               </tr>
               <tr>
-                <td><label for="Variables"><h3>Numper Of Variables</h3></label></td>
-                <td><input type="number" id="Variables" class="border border-2 border-black rounded-2"></td>
+                <td>
+                  <label for="Variables"><h3>Numper Of Variables</h3></label>
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="Variables"
+                    class="border border-2 border-black rounded-2"
+                  />
+                </td>
               </tr>
             </table>
           </div>
           <div class="d-flex justify-content-center my-4">
-            <button class="text-center border border-2 border-black rounded-2 my-2 p-2 bg-black" onclick="Switch()"><h6 class="text-white">Submet</h6></button>
+            <button
+              class="text-center border border-2 border-black rounded-2 my-2 p-2 bg-black"
+              onclick="Switch()"
+            >
+              <h6 class="text-white">Submet</h6>
+            </button>
           </div>
         </section>
       </div>
@@ -83,12 +113,35 @@
         </section>
       </main>
       <footer class="border border-2 border-black rounded-2 my-3">
-        <h5>Created By Student</h5>
-        <h6 class="ps-5">Mohamed Hatem Mohamed</h6>
-        <h6 class="ps-5">Khaled Tareq Elsayed</h6>
-      </footer>
+  <div class="container py-2">
+    <div class="row text-center text-md-start justify-content-between">
+
+      <div class="col-12 col-md-4 mb-3">
+        <h5 class="fw-bold">Created By Students :</h5>
+
+        <h6 class="ps-md-4 mb-0"><strong>Std.</strong> Mohamed Hatem Mohamed</h6>
+        <span class="ps-md-4 d-block">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Sec.</strong> 25</span>
+
+        <h6 class="ps-md-4 mb-0 mt-2"><strong>Std.</strong> Khaled Tareq Elsayed</h6>
+        <span class="ps-md-4 d-block">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Sec.</strong> 9</span>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <h5 class="fw-bold">Managed by :</h5>
+        <h6 class="ps-md-4"><strong>Dr.</strong> Sherif Barakat</h6>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <h5 class="fw-bold">Supervised by :</h5>
+        <h6 class="ps-md-4"><strong>Eng.</strong> Normin Lotfy</h6>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
     </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>

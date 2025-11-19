@@ -6,6 +6,11 @@ ul li input{
     width: 60%;
     margin: auto;
 }
+@media (max-width: 768px){
+    .container-mini{
+        width: 100%;
+    }
+}
 .container-mini input{
     width: 30%;
 }

@@ -1,0 +1,25 @@
+ul li input{
+    width: 5%;
+    margin: 0.5%;
+}
+.container-mini{
+    width: 60%;
+    margin: auto;
+}
+.container-mini input{
+    width: 30%;
+}
+.error-border {
+    border: 3px solid red !important;
+}
+/* make matrix inputs a bit wider so negative sign doesn't get hidden */
+#matrix input[type="number"],
+#finalMatrix input[type="text"],
+#stepsContainer input[type="text"] {
+  min-width: 62px;      /* small increase, adjust if you want wider */
+  width: 62px;
+  box-sizing: border-box;
+  padding-left: 6px;    /* give some inner space for minus sign */
+  padding-right: 6px;
+  text-align: center;
+}

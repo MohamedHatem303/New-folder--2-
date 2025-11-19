@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Linear — Solve System (Gaussian steps)</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container border border-2 border-black rounded-2 px-3 my-4">
+      <nav class="my-2 py-3 px-2 border border-2 border-black rounded-2">
+        <div class="d-flex justify-content-center">
+          <div>
+            <h3>Solve the linear system using the Gaussian Elimination method</h3>
+          </div>
+        </div>
+      </nav>
+      <div id="model" class="container-mini border border-2 border-black rounded-2 d-block">
+        <section class="container">
+          <div class="d-flex justify-content-center my-4">
+            <h3 class="text-center border border-2 border-black rounded-2 my-2 p-2">Size of Augmented Matrix</h3>
+          </div>
+          <div class="ms-5 my-4">
+            <table>
+              <tr>
+                <td><label for="Equations"><h3>Numper Of Equations</h3></label></td>
+                <td><input type="number" id="Equations" class="border border-2 border-black rounded-2"></td>
+              </tr>
+              <tr>
+                <td><label for="Variables"><h3>Numper Of Variables</h3></label></td>
+                <td><input type="number" id="Variables" class="border border-2 border-black rounded-2"></td>
+              </tr>
+            </table>
+          </div>
+          <div class="d-flex justify-content-center my-4">
+            <button class="text-center border border-2 border-black rounded-2 my-2 p-2 bg-black" onclick="Switch()"><h6 class="text-white">Submet</h6></button>
+          </div>
+        </section>
+      </div>
+      <main id="main" class="d-none">
+        <section>
+          <div>
+            <h4>Augmented Matrix</h4>
+          </div>
+          <div class="d-flex justify-content-center">
+            <ul id="matrix" class="list-unstyled text-center"></ul>
+          </div>
+          <div class="d-flex justify-content-center my-2">
+            <button
+              onclick="back()"
+              class="border border-2 border-black rounded-2 text-center mx-2 p-1 bg-white"
+            >
+              Edit Size
+            </button>
+            <button
+              onclick="startSolve()"
+              class="border border-2 border-black rounded-2 text-center mx-2 p-1 bg-black text-white"
+            >
+              Start Solve
+            </button>
+            <button
+              onclick="clearValues()"
+              class="border border-2 border-black rounded-2 text-center mx-2 p-1 bg-white"
+            >
+              CLear Values
+            </button>
+          </div>
+        </section>
+        <section id="stepsContainer"></section>
+        <section id="finalSection">
+          <div class="border border-2 border-black rounded-2 my-2">
+            <div>
+              <div class="text-center my-5">
+                <h3>final equation form</h3>
+              </div>
+              <div class="d-flex justify-content-center">
+                <ul id="finalMatrix" class="list-unstyled text-center"></ul>
+              </div>
+            </div>
+            <div id="variablesList" class="container-mini"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="border border-2 border-black rounded-2 my-3">
+        <h5>Created By Student</h5>
+        <h6 class="ps-5">Mohamed Hatem Mohamed</h6>
+        <h6 class="ps-5">Khaled Tareq Elsayed</h6>
+      </footer>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
